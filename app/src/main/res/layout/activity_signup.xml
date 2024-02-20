@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollY="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/mainBackground"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="282dp"
+                    android:layout_height="59dp"
+
+                    android:layout_marginTop="128dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily=""
+                    android:foreground="@drawable/edit_text_border"
+                    android:hint="enter child's name"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="284dp"
+                    android:layout_height="57dp"
+
+                    android:layout_marginTop="29dp"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily=""
+                    android:foreground="@drawable/edit_text_border"
+                    android:hint="enter email"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+                <EditText
+                    android:id="@+id/edtPassword"
+
+                    android:layout_width="284dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/white"
+                    android:foreground="@drawable/edit_text_border"
+                    android:hint="enter password"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+                <EditText
+                    android:id="@+id/edtAge"
+                    android:layout_width="284dp"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/white"
+                    android:foreground="@drawable/edit_text_border"
+                    android:hint="enter child's age"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.559"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="329dp"
+                    android:layout_height="101dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtAge">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="70dp"
+                        android:fontFamily="@font/kgprimarypenmanship2"
+                        android:text="I am "
+                        android:textColor="@color/loginCardBgRight"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:entries="@array/user_types"
+                        android:spinnerMode="dropdown"
+                        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="300dp"
+                    android:layout_height="69dp"
+
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/card_blue_header_login"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.639"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="298dp"
+                        android:layout_height="95dp"
+                        android:fontFamily="@font/fromcartoonblocks"
+                        android:text="Signup"
+
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="60sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imgSideDisplay"
+                    android:layout_width="143dp"
+                    android:layout_height="115dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/loginCardBgRight"
+                    android:src="@drawable/img_2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnLogin"
+                    app:layout_constraintHorizontal_bias="0.149"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="207dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="220dp"
+                    android:background="@drawable/card_blue_header_login"
+                    android:fontFamily="@font/fromcartoonblocks"
+                    android:padding="10dp"
+                    android:text="Lets Start!"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.921"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="198dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="Already have an account?"
+                    android:textColor="#F60202"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.924"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSignup"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

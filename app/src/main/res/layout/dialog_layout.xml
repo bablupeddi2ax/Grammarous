@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="50dp"
+        android:backgroundTint="#F1ECEC"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/card_blue_header_login"
+        >
+        <TextView
+            android:text="Hurray!"
+            android:textSize="60sp"
+            android:textColor="#ffff"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/kgprimarypenmanship2"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Congrats Kiddoo ! New Achievement Unlocked."
+                android:textSize="40sp"
+                android:fontFamily="@font/kgprimarypenmanship2"
+                android:textColor="#F61808"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+            <RatingBar
+                android:numStars="3"
+                style="?android:attr/ratingBarStyle"
+                android:max="3"
+                android:rating="3.0"
+                android:stepSize="3.0"
+                android:layout_marginTop="5dp"
+                android:elevation="10dp"
+                android:secondaryProgressTint="#EA9210"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </RatingBar>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btnPlayAgain"
+                   android:background="@drawable/btn_playa_again_bg"
+                    android:text="Play again!"
+
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
+            <Button
+                android:id="@+id/btnContinue"
+                android:text="Continue"
+                android:layout_marginLeft="40dp"
+                android:layout_width="100dp"
+                android:background="@drawable/card_blue_header_login"
+                android:layout_height="50dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

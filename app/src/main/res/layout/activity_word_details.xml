@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".words.WordDetails">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="680dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="word"
+            android:textSize="80sp"
+            android:fontFamily="@font/kgprimarypenmanship2"
+            android:textColor="@color/loginCardBgRight"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:id="@+id/txtDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Definition"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/kgprimarypenmanship2"
+            android:textColor="#e74c3c"
+            />
+            <TextView
+                android:id="@+id/txtSynonyms"
+                android:text="synonyms"
+                android:textSize="30sp"
+                android:fontFamily="@font/kgprimarypenmanship2"
+                android:textColor="#f1c40f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+
+                />
+            <TextView
+                android:id="@+id/txtPartsOfSpeech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="parts of speech"
+                android:textSize="30sp"
+                android:fontFamily="@font/kgprimarypenmanship2"
+                android:textColor="#330B11"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                />
+            <TextView
+                android:id="@+id/txtPronunciation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="pronunciation"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/kgprimarypenmanship2"
+                android:textColor="#2ecc71"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnSpeak"
+                android:text="Pronounce"
+                android:background="@color/loginCardBgLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

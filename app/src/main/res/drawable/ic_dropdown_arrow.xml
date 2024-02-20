@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The main circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#333333" /> <!-- Color of the circle -->
+            <size android:width="24dp" android:height="24dp" /> <!-- Size of the circle -->
+        </shape>
+    </item>
+    <!-- The arrow in the center -->
+    <item>
+        <bitmap
+            android:src="@drawable/baseline_arrow_drop_down_24"
+            android:gravity="center" />
+    </item>
+</layer-list>
