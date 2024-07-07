@@ -11,7 +11,7 @@
         android:layout_marginTop="40dp"
         android:layout_width="394dp"
         android:layout_height="60dp"
-        app:cardBackgroundColor="@color/btnBackgroundWhite"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,12 +34,43 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/btnDefiniton"
+        android:text="Definition"
+        android:textAllCaps="false"
+        android:fontFamily="@font/kgprimarypenmanship2"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        android:background="#C82B61"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="476dp"
+        android:background="#1B2F9F"
+        android:fontFamily="@font/kgprimarypenmanship2"
+        android:text="More"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/btnReveal"
         android:text="Reveal"
         android:textSize="30sp"
         android:textAllCaps="false"
         android:fontFamily="@font/kgprimarypenmanship2"
-        android:background="@color/btnBackgroundWhite"
+        android:background="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="476dp"
@@ -100,7 +131,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="476dp"
-        android:background="@color/btnBackgroundWhite"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.882"
         app:layout_constraintStart_toStartOf="parent"

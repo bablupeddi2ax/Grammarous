@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent">
+    <!-- topic_card_flipped_layout.xml -->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnEasy"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/easy_btn_bg"
+            android:onClick="onEasyButtonClick"
+            android:tag="easy"
+            android:text="Easy" />
+
+        <Button
+            android:id="@+id/btnMedium"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.33"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/medium_btn_bg"
+            android:onClick="onMediumButtonClick"
+            android:tag="medium"
+            android:text="Medium" />
+
+        <Button
+            android:id="@+id/btnHard"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.33"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/hard_btn_bg"
+            android:onClick="onHardButtonClick"
+            android:tag="hard"
+            android:text="Hard" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

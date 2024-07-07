@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "258243456821",
+    "firebase_url": "https://grammarous-f286b-default-rtdb.firebaseio.com",
+    "project_id": "grammarous-f286b",
+    "storage_bucket": "grammarous-f286b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258243456821:android:5f4bc7d7df8083857ca67c",
+        "android_client_info": {
+          "package_name": "com.example.grammarous"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuS5B-Izy3rgFv-CKyU0vpcZYs-M8BBOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

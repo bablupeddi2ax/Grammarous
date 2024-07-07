@@ -31,7 +31,7 @@
             android:text="word"
             android:textSize="80sp"
             android:fontFamily="@font/kgprimarypenmanship2"
-            android:textColor="@color/loginCardBgRight"
+            android:textColor="@color/colorAccent"
             android:layout_marginTop="10dp"
             android:layout_marginStart="35dp"
             android:textAlignment="center"
@@ -54,6 +54,18 @@
                 android:textSize="30sp"
                 android:fontFamily="@font/kgprimarypenmanship2"
                 android:textColor="#f1c40f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+
+                />
+            <TextView
+                android:id="@+id/txtAntonyms"
+                android:text="antonyms"
+                android:textSize="30sp"
+                android:fontFamily="@font/kgprimarypenmanship2"
+                android:textColor="#E608B6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -86,7 +98,7 @@
             <Button
                 android:id="@+id/btnSpeak"
                 android:text="Pronounce"
-                android:background="@color/loginCardBgLeft"
+                android:background="@color/colorAccent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </androidx.appcompat.widget.LinearLayoutCompat>

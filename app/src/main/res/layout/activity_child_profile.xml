@@ -4,6 +4,282 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ED0D5A"
+
     tools:context=".parentViews.ChildProfile">
 
+
+    <TextView
+        android:id="@+id/txtKidsProfileTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/kgprimarypenmanship2"
+        android:text="Kids Profile"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/profile_main_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtKidsProfileTag"
+        app:layout_constraintVertical_bias="0.193">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="92dp"
+            android:layout_height="91dp"
+
+            android:layout_marginTop="24dp"
+
+            android:src="@drawable/img_2"
+            app:civ_border_color="#18629E"
+            app:civ_border_width="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.084"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgAddImage"
+            android:layout_width="54dp"
+            android:layout_height="37dp"
+            android:src="@drawable/cam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.379"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+        <TextView
+            android:id="@+id/txtProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Rony"
+            android:textColor="@color/colorAccent"
+            android:textSize="40sp"
+            android:textStyle="bold|normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.62"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="136dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/leaves_gradient_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.098"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/coins_earned__gradient_bg">
+
+                <TextView
+                    android:id="@+id/txtTotalNoOfCoinsEarned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold|normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTotalCoinsTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="Coins"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTotalNoOfCoinsEarned" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="136dp"
+            android:layout_height="98dp"
+
+            android:background="@drawable/leaves_gradient_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="94dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.898"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtProfileName">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/games_palyed_card_bg">
+
+                <TextView
+                    android:id="@+id/txtTotalNoOfGamesPlayed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold|normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTotalGamesPlayedTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="Games"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTotalNoOfGamesPlayed" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="136dp"
+            android:layout_height="98dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/leaves_gradient_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2"
+            app:layout_constraintVertical_bias="0.19">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/words_leanred_card_bg">
+
+                <TextView
+                    android:id="@+id/txtTotalWordsLearned"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="50"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold|normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtWordsTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="Words"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTotalWordsLearned" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="136dp"
+            android:layout_height="98dp"
+            android:background="@drawable/leaves_gradient_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+android:layout_marginTop="-30dp"
+            app:layout_constraintVertical_bias="0.32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.90"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/freinds_bg">
+
+                <TextView
+                    android:id="@+id/txtFriends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="50"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold|normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTotalWordsLearnedTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/kgprimarypenmanship2"
+                    android:text="Words"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtFriends" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

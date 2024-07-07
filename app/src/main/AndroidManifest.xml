@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:node="remove"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,9 +18,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Grammarous"
         tools:targetApi="31">
-        <activity
-            android:name=".words.MatchingGames"
-            android:exported="false" />
+        <service
+            android:name=".GFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".mcq.Mcq" android:exported="true"/>
+        <activity android:name=".mcq.Topic" android:exported="true"/>
         <activity
             android:name=".words.FillBlanks"
             android:exported="false" />

@@ -21,7 +21,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="@color/mainBackground"
+                android:backgroundTint="@color/white"
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +75,7 @@
                         android:layout_height="70dp"
                         android:fontFamily="@font/kgprimarypenmanship2"
                         android:text="I am "
-                        android:textColor="@color/loginCardBgRight"
+                        android:textColor="@color/colorAccent"
                         android:textSize="50sp"
                         android:textStyle="bold" />
 
@@ -124,8 +124,8 @@
                     android:id="@+id/imgSideDisplay"
                     android:layout_width="135dp"
                     android:layout_height="154dp"
-                    android:backgroundTint="@color/loginCardBgRight"
-                    android:src="@drawable/img_2"
+                    android:backgroundTint="@color/colorAccent"
+                    android:src="@drawable/profile"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/btnLogin"
                     app:layout_constraintHorizontal_bias="0.149"

@@ -7,18 +7,34 @@
     tools:context=".words.ShakeWords">
 
     <TextView
+        android:id="@+id/txtShakeTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/kgprimarypenmanship2"
+        android:text="Shake your phone!"
+        android:textColor="@color/darkest_blue"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/randWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
         android:fontFamily="@font/kgprimarypenmanship2"
         android:text="word"
-        android:textColor="@color/loginCardBgRight"
+        android:textColor="@color/colorAccent"
         android:textSize="80sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/txtShakeTag"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnSpeakWord"
